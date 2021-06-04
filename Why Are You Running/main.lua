@@ -150,7 +150,7 @@ if not SWAYRMod then
                 MenuHelper:AddMenuItem(nodes.blt_options, mod_data.id, mod_data.id, mod_data.desc)
             end)
         elseif Network:is_server() then
-            local level_id = Global.level_data and Global.level_data.level_id
+            local level_id = tostring(Global.level_data and Global.level_data.level_id):gsub("_day", "")
 
             if Self.included(level_id) then
                 Hooks:PostHook(MissionScriptElement, "init", "PDCOMod_ElementInit", function(self)
