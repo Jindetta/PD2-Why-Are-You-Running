@@ -7,21 +7,31 @@ if not SWAYRMod then
             rat = {
                 elements = {102230, 102242, 102243, 102244, 102246, 102316},
                 name = "heist_rat",
-                priority = 3
+                priority = 5
             },
             pal = {
                 elements = {134713, 134763, 134813, 134863},
                 name = "heist_pal",
-                priority = 2
+                priority = 4
             },
             mus = {
                 elements = {137238},
                 name = "heist_mus",
-                priority = 1
+                priority = 3
+            },
+            cane = {
+                elements = {140713, 141013},
+                name = "heist_cane",
+                priority = 2
             },
             watchdogs_2 = {
                 elements = {100683, 100690, 100699},
                 name = "heist_watchdogs",
+                priority = 1
+            },
+            pines = {
+                elements = {130124, 130324, 130524, 130724},
+                name = "heist_pines",
                 priority = 0
             }
         },
