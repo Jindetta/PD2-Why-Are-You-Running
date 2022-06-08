@@ -106,7 +106,7 @@ if not SWAYRMod then
                     {
                         [mod_data.id] = "Why Are You Running?",
                         [mod_data.desc] = "Open mod settings.",
-                        [mod_data.level_desc] = "Enable for \"$1\".\nLevel must be restarted for changes to apply."
+                        [mod_data.level_desc] = "Enable for \"$name\".\nLevel must be restarted for changes to apply."
                     }
                 )
 
@@ -138,7 +138,7 @@ if not SWAYRMod then
             Hooks:Add("MenuManagerPopulateCustomMenus", "SWAYRMod_PopulateMenu", function()
                 for level_id, data in pairs(mod_data.levels) do
                     local title_text = managers.localization:text(data.name)
-                    local description_text = managers.localization:text(mod_data.level_desc, {title_text})
+                    local description_text = managers.localization:text(mod_data.level_desc, {name = title_text})
 
                     MenuHelper:AddToggle(
                         {
