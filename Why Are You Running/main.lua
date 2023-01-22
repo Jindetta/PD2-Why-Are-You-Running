@@ -163,7 +163,7 @@ if not SWAYRMod then
             local level_id = tostring(Global.level_data and Global.level_data.level_id):gsub("_day", "")
 
             if Self.included(level_id) then
-                Hooks:PostHook(MissionScriptElement, "init", "PDCOMod_ElementInit", function(self)
+                Hooks:PostHook(MissionScriptElement, "init", "SWAYRMod_ElementInit", function(self)
                     if table.contains(mod_data.levels[level_id].elements, self._id) then
                         self:set_enabled(false)
                     end
