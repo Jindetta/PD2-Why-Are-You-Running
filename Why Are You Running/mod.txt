@@ -3,7 +3,7 @@
     "description" : "Prevent loot drop-off driver/pilot from leaving in some heists.",
     "author" : "Jindetta",
     "blt_version" : 2,
-    "version" : 1.03,
+    "version" : 1.04,
     "priority": 1,
     "hooks" : [
         {
